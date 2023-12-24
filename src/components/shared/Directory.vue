@@ -3,8 +3,9 @@ const props = defineProps({
   items:Array
 });
 
-console.log(props.items);
+//console.log(props.items);
 </script>
+
 <template>
   <div class="directory">
     <h3>目录</h3>
@@ -17,6 +18,7 @@ console.log(props.items);
   </div>
   <br />
 </template>
+
 <style scoped>
 div.directory{
     width:fit-content;

@@ -18,6 +18,11 @@ const router = createRouter({
       component: () => import('../views/FiguresView.vue')
     },
     {
+      path: '/history',
+      name: 'history',
+      component: () => import('../views/HistoryView.vue')
+    },
+    {
       path: '/reposity',
       name: 'reposity',
       component: () => import('../views/ReposityView.vue')

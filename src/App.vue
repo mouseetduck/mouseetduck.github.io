@@ -35,6 +35,8 @@ menu {
 
   height: 100%;
   width: var(--menu-gap);
+
+  transition: 0.4s;
 }
 
 content {
@@ -44,7 +46,6 @@ content {
   top: 3rem;
 
   width: -webkit-fill-available;
-  height: -webkit-fill-available;
   min-height: 35rem;
 
   border-style: solid;
@@ -55,6 +56,8 @@ content {
   background-color:var(--color-background);
   padding: 5rem 8rem 8rem 8rem;
   margin: 0;
+
+  transition: 0.4s;
 }
 
 /*
@@ -125,4 +128,13 @@ nav a:first-of-type {
   }
   */
 }
+@media (max-width: 768px) {
+  content {
+    position: static;
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 1rem;
+  }
+ 
+}
 </style>
+

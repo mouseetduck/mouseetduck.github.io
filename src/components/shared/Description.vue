@@ -3,6 +3,7 @@ const props = defineProps({
   url:String
 });
 </script>
+
 <template>
   <div class="page-description">
     <img :src="url" alt="图片击败！！" />
@@ -10,6 +11,7 @@ const props = defineProps({
   </div>
   <br />
 </template>
+
 <style scoped>
 div.page-description{
   background-color: var(--color-background-description);
@@ -48,18 +50,17 @@ div.page-description img{
     padding: 0 1rem 1rem 1rem;    
   }
 }
+/*
 @media (max-width: 512px) {
   div.page-description{
     font-size: 12px;
     display: grid;
     height: fit-content;
-    /*
-    display: none;
-    */
   }
   div.page-description img{
     display: none;
   }
   
 }
+*/
 </style>
