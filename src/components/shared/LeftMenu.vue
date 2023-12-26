@@ -33,9 +33,6 @@ const menu = ref([
 </script>
 
 <template>
-
-    <left-menu-button><img :src="ImgFcyzUrl" alt="图片击败" /></left-menu-button>
-
     <ul>
       <li class ="logo">
         <img :src="ImgFcyzUrl" alt="图片击败！！" />
@@ -53,10 +50,12 @@ const menu = ref([
 
 
 <style scoped>
+
+/*
+
+<left-menu-button @click="isAppear = !isAppear"><img :src="ImgFcyzUrl" alt="图片击败" /></left-menu-button>
+
 left-menu-button {
-  /*
-  display: none;
-  */
 
   position: fixed;
   top: 3rem;
@@ -70,6 +69,7 @@ left-menu-button {
   width: 2.5rem;
   height: 2.5rem;
 
+  transition: 0.4s;
 }
 
 left-menu-button img{
@@ -84,11 +84,16 @@ left-menu-button img{
   animation-timing-function:linear;
   animation-iteration-count:infinite;
 }
+*/
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  height: 100%;
+
+  transition: 0.4s;
  }
 
 ul li {
@@ -146,20 +151,35 @@ ul li.logo h4{
   ul li:not(.logo):hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
+
+  /*
+  left-menu-button:hover
+  {
+    display: none;
+  }
+  left-menu-button:hover+ul,
+  */
+
+  ul:hover {
+    opacity: 1;
+    z-index: 1;
+  }
+
 }
 
 @media (max-width: 768px) {
   ul {
-    display: none;
+    opacity: 0;
+    background-color: var(--color-main);
   }
 
+  /*
   left-menu-button {
     display: flex;
     opacity: 0.8;
 
     left: 2rem;
-
-    transition: 0.4s;
   }
+  */
 }
 </style>

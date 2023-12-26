@@ -40,9 +40,10 @@
   --color-background-mute: var(--vt-c-white-mute);
 
   --color-main: var(--vt-c-light-purple);
-  --color-background-description: var(--vt-c-white-pure);
+  --color-background-description: var(--vt-c-white);
 
   --color-theme-1: var(--vt-c-light-green);
+  --color-theme-2: var(--vt-c-light-purple);
 
   --color-border: var(--vt-c-divider-light-3);
   --color-border-hover: var(--vt-c-divider-light-1);
